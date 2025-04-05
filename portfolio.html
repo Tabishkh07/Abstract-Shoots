@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract Shoots | Mubashshir's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 col-10">
+                <div class="logo mt-10 mb-60">
+                    <a class="d-block text-center" href="index.html">
+                        <img src="images/logo.png" alt="" class="w-100">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 mobile">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ourstory.html">Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg desktop">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourstory.html">Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="inner-pages">
+            <div class="page-title">
+                <h1><a href="#">Home</a><i> ></i><span>Portfolio</span></h1>
+            </div>
+
+            <!-- new code for video  -->
+             <!-- Video Section - Desktop -->
+<div class="videoflip d-none d-md-block">
+    <div class="page-title">
+        <h1><span>Videos</span></h1>
+    </div>
+    <div class="video-container" style="display:flex;align-items:center;max-width:100%;margin:0 auto;">
+        <button class="nav-external-button" onclick="prevVideo()" 
+                style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div style="flex-grow:1;position:relative;height:70vh;overflow:hidden;background:#000;">
+            <iframe id="videoDisplay" class="video-display" src="https://www.youtube.com/embed/PtDjGMtm58Y?controls=0" 
+                    style="width:100%;height:100%;border:none;"></iframe>
+            <div class="video-counter"><span id="videoCounter">1/5</span></div>
+            <!-- Fullscreen Button -->
+            <button class="fullscreen-btn" onclick="toggleVideoFullscreen()">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        
+        <button class="nav-external-button" onclick="nextVideo()" 
+                style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Video Section - Mobile -->
+<div class="videoflip d-block d-md-none">
+    <div class="page-title">
+        <h1><span>Videos</span></h1>
+    </div>
+    <div class="video-container" style="display:flex;align-items:center;width:100%;">
+        <button class="nav-external-button mobile-btn" onclick="prevVideo()" 
+                style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div style="flex-grow:1;position:relative;height:50vh;overflow:hidden;background:#000;">
+            <iframe id="mobileVideoDisplay" class="video-display" src="https://www.youtube.com/embed/PtDjGMtm58Y?controls=0" 
+                    style="width:100%;height:100%;border:none;"></iframe>
+            <div class="video-counter"><span id="mobileVideoCounter">1/5</span></div>
+            <!-- Fullscreen Button -->
+            <button class="fullscreen-btn" onclick="toggleVideoFullscreen()">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        
+        <button class="nav-external-button mobile-btn" onclick="nextVideo()" 
+                style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+<script>
+// Video Gallery Configuration
+const videos = [
+    { id: "PtDjGMtm58Y", title: "Abstract Motion 1" },
+    { id: "YXv3gYCygME", title: "Urban Flow" },
+    { id: "Z8izEEB-SlE", title: "Light Patterns" },
+    { id: "BayihBb4lRM", title: "Digital Waves" },
+    { id: "GIsp2T5l4j4", title: "Texture Studies" },
+    { id: "lFoIkrnbo48", title: "Texture Studies" } 
+];
+
+let currentVideoIdx = 0;
+
+function updateVideoGallery() {
+    currentVideoIdx = (currentVideoIdx + videos.length) % videos.length;
+    const video = videos[currentVideoIdx];
+    
+    document.getElementById("videoDisplay").src = `https://www.youtube.com/embed/${video.id}?controls=0&autoplay=0&rel=0&showinfo=0&modestbranding=1&disablekb=1`;
+    document.getElementById("mobileVideoDisplay").src = `https://www.youtube.com/embed/${video.id}?controls=0&autoplay=0&rel=0&showinfo=0&modestbranding=1&disablekb=1`;
+    
+    document.querySelectorAll(".video-counter span").forEach(el => {
+        el.textContent = `${currentVideoIdx+1}/${videos.length}`;
+    });
+}
+
+function prevVideo() { currentVideoIdx--; updateVideoGallery(); }
+function nextVideo() { currentVideoIdx++; updateVideoGallery(); }
+
+function toggleVideoFullscreen() {
+    const container = document.querySelector('.videoflip .video-container');
+    if (!document.fullscreenElement) {
+        container.requestFullscreen().catch(err => {
+            console.error(`Fullscreen error: ${err.message}`);
+        });
+    } else {
+        document.exitFullscreen();
+    }
+}
+
+// Initialize
+updateVideoGallery();
+</script>
+<br>
+<br>
+
+            <!-- new code  -->
+<!-- Photos Section - Desktop -->
+<div class="photoflip d-none d-md-block">
+    <div class="page-title">
+        <h1><span>Photos</span></h1>
+    </div>
+    <div class="image-container" style="display:flex;align-items:center;max-width:100%;margin:0 auto;">
+        <!-- Previous Button -->
+        <button class="nav-external-button" onclick="prevImage()" 
+                style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div style="flex-grow:1;position:relative;height:70vh;overflow:hidden;">
+            <img id="imageDisplay" src="images/port-1.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+            <!-- <div class="image-counter"><span id="imageCounter">1/5</span></div> countinggg -->
+            <!-- Fullscreen Button -->
+            <button class="fullscreen-btn" onclick="togglePhotoFullscreen()">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        
+        <!-- Next Button -->
+        <button class="nav-external-button" onclick="nextImage()" 
+                style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Photos Section - Mobile -->
+<div class="photoflip d-block d-md-none">
+    <div class="page-title">
+        <h1><span>Photos</span></h1>
+    </div>
+    <div class="image-container" style="display:flex;align-items:center;width:100%;">
+        <!-- Previous Button -->
+        <button class="nav-external-button mobile-btn" onclick="prevImage()" 
+                style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div style="flex-grow:1;position:relative;height:50vh;overflow:hidden;">
+            <img id="mobileImageDisplay" src="images/port-1.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+            <div class="image-counter"><span id="mobileImageCounter">1/5</span></div>
+            <!-- Fullscreen Button -->
+            <button class="fullscreen-btn" onclick="togglePhotoFullscreen()">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        
+        <!-- Next Button -->
+        <button class="nav-external-button mobile-btn" onclick="nextImage()" 
+                style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+<style>
+/* Navigation Buttons */
+.nav-external-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Perfect circle */
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    flex-shrink: 0;
+    z-index: 10;
+    /* Low opacity with subtle border */
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    /* No shadow or effects that break transparency */
+}
+.nav-external-button:hover {
+    background: rgba(255,255,255,0.25); /* Slightly brighter on hover */
+    transform: scale(1.05);
+}
+
+/* Mobile buttons */
+.mobile-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+/* Fullscreen Button */
+.fullscreen-btn {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+.fullscreen-btn:hover {
+    background: rgba(0,0,0,0.7);
+}
+
+/* Image Counter */
+.image-counter {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+</style>
+
+<script>
+// [Previous JavaScript code remains exactly the same]
+const photos = ["images/port-1.jpg",
+                "images/port-2.jpg",
+                "images/potrfolio pics/1.png",
+                "images/potrfolio pics/2.png",
+                "images/potrfolio pics/3.png",
+                "images/potrfolio pics/4.png",
+                "images/potrfolio pics/5.png",
+                "images/potrfolio pics/6.png",
+                "images/potrfolio pics/7.png",
+                "images/potrfolio pics/8.png",
+                "images/potrfolio pics/9.png",
+                "images/potrfolio pics/10.png",
+                "images/potrfolio pics/11.png",
+                "images/potrfolio pics/12.png",
+                "images/potrfolio pics/13.png",
+                "images/potrfolio pics/14.png",
+                "images/potrfolio pics/15.png",
+                "images/potrfolio pics/16.png",
+                "images/potrfolio pics/17.png",
+                "images/potrfolio pics/18.png",
+                "images/potrfolio pics/19.png",
+                "images/potrfolio pics/20.png",
+                "images/potrfolio pics/21.png",
+                "images/potrfolio pics/22.png",
+                "images/potrfolio pics/23.png",
+                "images/potrfolio pics/24.png",
+                "images/potrfolio pics/25.png",
+                "images/potrfolio pics/26.png",
+                "images/potrfolio pics/27.png",
+                "images/potrfolio pics/28.png",
+                "images/potrfolio pics/29.png",
+                "images/potrfolio pics/30.png",
+                "images/potrfolio pics/31.png",
+                "images/potrfolio pics/32.png",
+
+            ];
+let currentIdx = 0;
+
+function updateGallery(){
+    currentIdx = (currentIdx + photos.length) % photos.length;
+    document.getElementById("imageDisplay").src = photos[currentIdx];
+    document.getElementById("mobileImageDisplay").src = photos[currentIdx];
+    document.querySelectorAll(".image-counter span").forEach(el => {
+        el.textContent = `${currentIdx+1}/${photos.length}`;
+    });
+}
+
+function prevImage(){ currentIdx--; updateGallery(); }
+function nextImage(){ currentIdx++; updateGallery(); }
+
+function togglePhotoFullscreen() {
+    const container = document.querySelector('.photoflip .image-container');
+    if (!document.fullscreenElement) {
+        container.requestFullscreen().catch(err => {
+            console.error(`Photo fullscreen error: ${err.message}`);
+        });
+    } else {
+        document.exitFullscreen();
+    }
+}
+
+document.addEventListener('fullscreenchange', () => {
+    const fsButtons = document.querySelectorAll('.fullscreen-btn i');
+    fsButtons.forEach(icon => {
+        icon.classList.toggle('fa-compress', document.fullscreenElement);
+        icon.classList.toggle('fa-expand', !document.fullscreenElement);
+    });
+});
+
+updateGallery();
+</script>
+
+           
+            </div>
+        </section>
+        <div class="copyright text-center pt-70 text-white">
+            © 2025 ABSTRACT SHOOTS. ALL RIGHTS RESERVED
+            <a class=" text-white" href="abstractshoots@gmail.com"></a>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+    <script>
+        $('.carousel ').flipster({
+            style: 'carousel',
+            spacing: -0.3,
+        });
+    </script>
+    <script>
+        $('.videoscarousel ').flipster({
+            style: 'carousel',
+            spacing: -0.3,
+        });
+    </script>
+    <script>
+        $('.branding ').flipster({
+            style: 'carousel',
+            spacing: -0.3,
+        });
+    </script>
+</body>
+</html>
