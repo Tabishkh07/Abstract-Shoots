@@ -2,7 +2,7 @@
 
 This is a frontend website for a photography brand called **Abstract Shoots**.
 
-The original site was already made — I worked on improving it by updating visuals, enhancing user experience, and making the contact section more functional.
+The web-site was half already made — I worked on improving it by updating visuals, enhancing user experience, and making the contact section more functional.
 
 ---
 
