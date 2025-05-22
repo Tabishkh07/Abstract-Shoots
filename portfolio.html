@@ -358,6 +358,10 @@ const photos = ["images/port-1.jpg",
                 "images/potrfolio pics/32.png",
 
             ];
+    photos.forEach(src => {
+    const img = new Image();
+    img.src = src;
+});
 let currentIdx = 0;
 
 function updateGallery(){
