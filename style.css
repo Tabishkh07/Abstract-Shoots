@@ -463,11 +463,11 @@ hr.divider {
 }
 .tabview .row {
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-transform: uppercase;
 }
 .tab1 {
-    font-size:20px;
+    font-size:1.25rem;
     padding: 15px 20px;
     background: #d31c23;
     border-top-left-radius: 50px;
@@ -485,7 +485,7 @@ hr.divider {
     border-bottom-right-radius: 20px;
 }
 .tab2 span {
-    font-size: 10px;
+    font-size: 1.25rem !important;
     line-height: 10px;
     padding: 10px 14px;
 }
@@ -730,12 +730,71 @@ section.contact-section footer .social{
     text-transform: uppercase;
 }
 
-.abb{
-    transform: none !important;
-    scale: 1 !important;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
-      
+/* Ensure hamburger icon (lines) is black and background transparent on mobile */
+/* .navbar-toggler {
+  border: none !important;
+  background: transparent !important;
 }
+
+.navbar-toggler .fa-bars {
+  color: black !important;
+  font-size: 1.5rem;
+} */
+
+/* Fix mobile view toggle visibility */
+@media (max-width: 767px) {
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+
+  .navbar-toggler {
+    border: none !important;
+    background: transparent !important;
+  }
+
+  .navbar-toggler .fa-bars {
+    color: black !important;
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desktop {
+    display: block !important;
+  }
+  .mobile {
+    display: none !important;
+  }
+
+  nav.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  ul.navbar-nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+ /* Story page  */
+img.story-image {
+    height: auto;
+    margin-left: 80px; /* Default for desktop */
+  }
+
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    img.story-image {
+      margin-left: 5%; /* Smaller shift for mobile */
+      max-width: 90%; /* Slightly wider on small screens */
+    }
+  }
+
+ 
