@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Abstract Shoots | Photography | Videography | Branding Content</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,6 +14,35 @@
     <style>
         .page-title h1 span:after {
             left: 16px;
+        }
+        @media (max-width: 414px) {
+            .tab2  {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: .5rem;
+                gap: .5rem;
+                padding-left: 1rem;
+            }
+
+            .tab2 span {
+                display: flex;
+                align-items: center;
+                font-size: .875rem;
+                line-height: 1.3;
+            }
+
+            .tab2 span span {
+                display: inline-block;
+                margin-right: .5rem;
+                font-size: 1rem;
+            }
+
+            .tab1 {
+                text-align: center;
+                font-size: 1rem;
+                margin-bottom: .75rem;
+            }
         }
     </style>
 </head>
@@ -94,38 +123,39 @@
             <div class="tabview text-center d-none d-md-block">
                 <div class="row align-items-center">
                     <div class="col-md-3">
-                        <div class="tab1">
-                            PERSONAL
-                        </div>
+                        <div class="tab1">PERSONAL</div>
                     </div>
                     <div class="col-md-9">
-                        <div class="tab2 d-flex justify-content-center">
-                            Personal Shoot <span>●</span> Wedding <span>●</span> Festivals <span>●</span> Parties &
-                            Events
+                        <div class="tab2 d-flex flex-wrap justify-content-center">
+                            <span><span>●</span>Personal Shoot</span>
+                            <span><span>●</span>Wedding</span>
+                            <span><span>●</span>Festivals</span>
+                            <span><span>●</span>Parties & Events</span>
                         </div>
                     </div>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-3">
-                        <div class="tab1">
-                            Corporate
-                        </div>
+                        <div class="tab1">Corporate</div>
                     </div>
                     <div class="col-md-9">
-                        <div class="tab2 d-flex justify-content-center">
-                            Corporate Video <span>●</span> Corporate Event <span>●</span> Small Business
+                        <div class="tab2 d-flex flex-wrap justify-content-center">
+                            <span><span>●</span>Corporate Video</span>
+                            <span><span>●</span>Corporate Event</span>
+                            <span><span>●</span>Small Business</span>
                         </div>
                     </div>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-3">
-                        <div class="tab1">
-                            Branding
-                        </div>
+                        <div class="tab1">Branding</div>
                     </div>
                     <div class="col-md-9">
-                        <div class="tab2 d-flex justify-content-center">
-                            Rebranding <span>●</span> Corporate Branding <span>●</span> Personal Branding
+                        <div class="tab2 d-flex flex-wrap justify-content-center">
+                            <span><span>●</span>Rebranding</span>
+                            <span><span>●</span>Brand Identity</span>
+                            <span><span>●</span>Social Media Content</span>
+                            <span><span>●</span>Commercials</span>
                         </div>
                     </div>
                 </div>
@@ -139,11 +169,10 @@
                     </div>
                     <div class="col-md-9">
                         <div class="tab2 d-block text-left mt-2">
-                            <span>●</span> Personal Shoot<br>
-                            <span>●</span> Wedding<br>
-                            <span>●</span> Festivals<br>
-                            <span>●</span> Parties &<br>
-                            <span>●</span> Events
+                            <span><span>●</span>Personal Shoot </span>
+                            <span><span>●</span>Wedding </span>
+                            <span><span>●</span>Festivals</span>
+                            <span><span>●</span>Parties & Events </span></span>
                         </div>
                     </div>
                 </div>
@@ -155,8 +184,8 @@
                     </div>
                     <div class="col-md-9">
                         <div class="tab2 d-block text-left mt-2">
-                            <span>●</span> Corporate Video<br>
-                            <span>●</span> Small Business
+                            <span>●</span>Corporate Video<br>
+                            <span>●</span>Small Business
                         </div>
                     </div>
                 </div>
@@ -168,9 +197,9 @@
                     </div>
                     <div class="col-md-9">
                         <div class="tab2 d-block text-left mt-2">
-                            <span>●</span> Rebranding <br>
-                            <span>●</span> Corporate Branding<br>
-                            <span>●</span> Personal Branding
+                            <span>●</span>Rebranding <br>
+                            <span>●</span>Corporate Branding<br>
+                            <span>●</span>Personal Branding
                         </div>
                     </div>
                 </div>
@@ -178,7 +207,7 @@
         </section>
         <div class="copyright text-center pt-70 text-white">
             © 2025 ABSTRACT SHOOTS. ALL RIGHTS RESERVED.
-            <a class=" text-white" href="abstractshoots@gmail.com"></a>
+            <a class=" text-white" href="@gmail.com"></a>
         </div>
     </div>
     <div class="fix-btn">
