@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Abstract Shoots | Mubashshir's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
@@ -37,7 +37,7 @@
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ourstory.html">Story</a>
+                                <a class="nav-link" href="story.html">Story</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="services.html">Services</a>
@@ -67,7 +67,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ourstory.html">Story</a>
+                        <a class="nav-link" href="story.html">Story</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
@@ -205,7 +205,7 @@ updateVideoGallery();
         </button>
         
         <div style="flex-grow:1;position:relative;height:70vh;overflow:hidden;">
-            <img id="imageDisplay" src="images/port-1.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+            <img id="imageDisplay" src="images/port-1.jpg" style="width:100%;height:100%;object-fit:contain;object-position:center;">
             <!-- <div class="image-counter"><span id="imageCounter">1/5</span></div> countinggg -->
             <!-- Fullscreen Button -->
             <button class="fullscreen-btn" onclick="togglePhotoFullscreen()">
@@ -307,7 +307,7 @@ updateVideoGallery();
 }
 
 /* Image Counter */
-.image-counter {
+/* .image-counter {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -317,21 +317,19 @@ updateVideoGallery();
     border-radius: 20px;
     font-size: 14px;
     font-weight: bold;
-}
+} */
 </style>
 
 <script>
 // [Previous JavaScript code remains exactly the same]
-const photos = ["images/port-1.jpg",
-                "images/port-2.jpg",
-                "images/potrfolio pics/1.png",
+const photos = ["images/potrfolio pics/8.png",
                 "images/potrfolio pics/2.png",
                 "images/potrfolio pics/3.png",
                 "images/potrfolio pics/4.png",
                 "images/potrfolio pics/5.png",
                 "images/potrfolio pics/6.png",
                 "images/potrfolio pics/7.png",
-                "images/potrfolio pics/8.png",
+                "images/potrfolio pics/1.png",
                 "images/potrfolio pics/9.png",
                 "images/potrfolio pics/10.png",
                 "images/potrfolio pics/11.png",
@@ -356,9 +354,8 @@ const photos = ["images/port-1.jpg",
                 "images/potrfolio pics/30.png",
                 "images/potrfolio pics/31.png",
                 "images/potrfolio pics/32.png",
-
             ];
-    photos.forEach(src => {
+            photos.forEach(src => {
     const img = new Image();
     img.src = src;
 });
