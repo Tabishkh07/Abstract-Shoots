@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Abstract Shoots | Story</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -92,53 +92,65 @@
                 <div class="col-md-7">
                         <div class="text-justify">
                             <p>
-                            </p>Since his childhood, Mubashshir was inclined towards creativity. The journey of success began with Brand Communications in a Mumbai-based firm. During his tenure, he was responsible for efficient, satisfactory, and economical operation in the area of marketing & Corporate Communications for the company. Not only was it a successful Branding across India but it won the hearts of the top management and he was pre-maturely double promoted as Manager – MarCom. During his time in Corporate, he gave several Brands a new identity.<br><br>
-                            <p>After this, he developed an inclination towards Commercials and Production Designing and considers himself fortunate enough to work in Bollywood (Indian Film Industry) – the biggest source of mass content creation in India. He started to work in Concept, Design, and Décor of Cinematic Art and Set Designing for Films/TV/OTT Platforms. During his tenure in Bollywood, he gave new Brand identities to three Brands and also worked on Large-scale Events.</p>
-                            <p>After that, he moved on to club all his creative experience and knowledge about Content creation in order to launch his own Brand which is Abstract Shoots. Abstract Shoots delivers tailormade high-quality video, photo, and branding solutions to its esteemed clients. The clients come from every walk of life, be it Corporate or individual and Abstract Shoots has become a turnkey expert in creating high-quality video, photo, and branding content.</p>                            
+                            </p>Since childhood, <strong>XYZ</strong> has been inclined towards creativity. 
+                            His journey toward success began with Brand Communications at a Mumbai-based firm,
+                             where he joined the Indian corporate sector with the initial responsibility 
+                             of rebranding a nationwide listed company. <strong> XYZ</strong> applied his expertise 
+                             in visual design to not only enhance the image of the Group but also do so in 
+                             a cost-effective and efficient manner. His efforts impressed the top management, 
+                             and at a very young age, he was prematurely double promoted to the position of 
+                             Manager - MarCom.<br><br>
+                             <p>He moved on the Corporate ladder to help several brands to either rebrand or 
+                                establish new brand identities.</p>
+                            <p>Later, he developed a strong interest in Commercials and Production Design and 
+                                considers himself fortunate to have worked in the Indian film industry—the 
+                                largest source of mass content creation in India. He began contributing to 
+                                concept development, design, and cinematic art décor, including set design for 
+                                films, television, and OTT platforms. During this period, he not only helped 
+                                rebrand several companies but also worked on large-scale set designs and 
+                                high-profile events.</p>
+                            <p>Eventually, he combined all his creative experience and content creation 
+                                knowledge to launch his own brand—Abstract Shoots. Abstract Shoots delivers 
+                                tailor-made, high-quality video, photo, and branding solutions to a diverse 
+                                clientele. Its clients range from individuals and small businesses to large 
+                                multinational corporations. Over the years, Abstract Shoots has established 
+                                itself as a turnkey expert in producing premium video, photo, and branded 
+                                content.</p>                            
                         </div>
                 </div>
-                <div class="col-md-5 " >
-                    <img class="img-fluid w-100 abb" src="images/Story pic.jpeg" alt="Story picture" >
+                <div class="col-md-5"><img class="img-fluid" style="max-width: 80%; height: auto;" src="images/Story pic.jpeg" alt="Story picture" >
                 </div>
             </div>
         </section>
         <div class="copyright text-center pt-70 text-white">
             © 2025 ABSTRACT SHOOTS. ALL RIGHTS RESERVED.
-            <a class=" text-white" href="abstractshoots@gmail.com"></a>
+            <a class=" text-white" href="@gmail.com"></a>
         </div>
     </div>
     <div class="fix-btn">
         <a href="contact.html">Say Hello!</a>
     </div>
 
-    <!-- <script>
-        function resetImageSize() {
-        const img = document.querySelector('.abb');
+    <script>
+    function resetImageSize() {
+        const img = document.querySelector('img[src="images/Story pic.jpeg"]');
         if (img) {
-        img.style.width = "100%";
-        img.style.maxWidth = "100%";
-        img.style.height = "auto";
-        img.style.transform = "none"; // <--- force reset
-        img.style.transition = "none"; // <--- kill animation
-        img.classList.add("img-fluid");
-            }
-        }    
-        function isStoryPage() {
-            return window.location.pathname.endsWith("story.html");
+            img.classList.add("story-image");
+            img.style.maxWidth = "90%";
         }
+    }
+
+    window.onload = resetImageSize;
+
+    window.addEventListener('pageshow', function (event) {
+        if (event.persisted) {
+            resetImageSize();
+        }
+    });
+</script>
+
     
-        function applyFix() {
-            if (isStoryPage()) {
-                // Apply fix after short delay
-                setTimeout(() => {
-                    resetImageSize();
-                }, 200); // Delay gives time for layout/rendering to settle
-            }
-        }
-        window.addEventListener("DOMContentLoaded", applyFix);
-        window.addEventListener("load", applyFix);
-        window.addEventListener("pageshow", applyFix);
-    </script> -->    
+    
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
     <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'>
     </script>
